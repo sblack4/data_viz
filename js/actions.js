@@ -10,24 +10,40 @@ d3.csv('../data/majors.csv', function(err, data){
 
 d3.select('#btnMajor').on('click', function(){
     console.log('click');
-    var chart = new tauCharts.Chart({
+
+    makeTable("#jobs", major_data);
         
-        data:major_data,
-        type:'horizontal-bar',
-        x:'Median annual Salary',
-        y:'Career',
-        color:'isWinner',
-        size:null,
-        plugins:
-        [
-        
-        // tauCharts.api.plugins.get('tooltip')(),
-        // tauCharts.api.plugins.get('legend')(),
-        // tauCharts.api.plugins.get('quick-filter')(),
-        // tauCharts.api.plugins.get('trendline')(),
-        ]
-        
-        });
-        
-        chart.renderTo('#my');
 });
+
+function makeTable(parentDiv, data) {
+    const parent = d3.select(parentDiv);
+    parent.append("div")
+        .attr("class", "table-responsive")
+        .append("table")
+        .attr("class", "table");
+        
+    // add header 
+    const tableHead = d3.select("table.table")
+        .append("thead")
+        .append("tr");
+    Object.keys(data[0])
+        .forEach(function(key) {
+            tableHead.append("th")
+                .text(key);
+        });
+    
+    const rowParent = d3.select("table.table")
+        .append("tbody");
+
+    data.forEach(function(row) {
+        let currentRow = rowParent.append("tr");
+        console.log(row);
+        Object.entries(row).forEach(function(value, key) {
+            console.log(value);
+            currentRow.append("td")
+                .text(value);
+        });
+    });
+
+    
+}
