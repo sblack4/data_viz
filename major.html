@@ -8,11 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Majors</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-        crossorigin="anonymous">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
     <!-- TauCharts Stylings -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/taucharts/latest/tauCharts.min.css">
@@ -26,36 +26,47 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <!-- ==================== START Navigation ==================== -->
+  <div class="navbar-wrapper">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
+    
+          <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html">What should I Major in?</a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                <li><a href="/about.html">About</a></li>
+                  <li ><a href="/getstarted.html">Get Started</a></li>
+                  <li class="active"><a href="/major.html">Majors</a></li>
+                  <li><a href="/jobs.html">Jobs</a></li>
+                  <li><a href="/electives.html">Electives</a></li>
+                  <li class="dropdown">
+                    <a href="/about.html" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">Nav header</li>
+                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
                 </ul>
+              </div>
             </div>
+          </div>
+    
         </div>
-    </nav>
-
-    <header class="bg-primary text-white">
-        <div class="container text-center">
-            <h1>Welcome to Scrolling Nav</h1>
-            <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
-        </div>
-    </header>
+      </div>
+      <!-- ==================== END Navigation ==================== -->
 
     <section id="input">
         <div class="container">
@@ -88,13 +99,14 @@
 
 
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
+  <!-- ==================== START Footer ==================== -->
+  <div id="footer" class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+          <p class="m-0 text-center text-white">Made with &hearts; </p>
         </div>
-        <!-- /.container -->
-    </footer>
+    
+    </div>
+      <!-- ==================== END Footer ==================== -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
